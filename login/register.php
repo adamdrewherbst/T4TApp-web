@@ -3,10 +3,10 @@ error_log("REGISTRATION: " . var_export($_POST,true));
 
 extract($_POST);
 
-if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+/*if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 	echo "EMAIL_INVALID";
 	exit();	
-}
+}*/
 
 if($password != $passwordConfirm) {
 	echo "PASSWORD_MISMATCH";
@@ -19,6 +19,13 @@ if($db->connect_errno) {
 	exit();
 }
 
-$db->query("INSERT INTO users (first_name, last_name, email, password) values ('$firstName', '$lastName', '$email', md5('$password'))");
+$existing = $db->query("SELECT username FROM users WHERE username=$username");
+if($existing->num_rows > 0) {
+	echo "USERNAME_EXISTS";
+	exit();
+}
+
+$db->query("INSERT INTO users (first_name, last_name, username, password) values ('$firstName', '$lastName', '$username', 
+md5('$password'))");
 echo "REGISTER_OK " . md5($password);
 ?>

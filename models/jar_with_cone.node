@@ -1,7 +1,7 @@
 file_version 1.0
 model_version 1.0
 jar_with_cone
-0.8	0.8	0.8
+1	1	1	0.5
 0	0	0	0
 0	0	0
 1	1	1
@@ -3971,3 +3971,5 @@ mesh
 0
 
 0
+0
+

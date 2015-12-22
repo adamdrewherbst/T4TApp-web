@@ -1,7 +1,7 @@
 file_version 1.0
 model_version 1.0
 sphere
-0.0	1.0	0.0
+0.0	1.0	0.0	1.0
 0	0	0	0
 0	0	0
 1	1	1
@@ -782,3 +782,5 @@ sphere
 0
 
 0
+0
+

@@ -1,7 +1,7 @@
 file_version 1.0
 model_version 1.0
 green_flange_wheel
-0.1	0.8	0.1
+0.1	0.8	0.1	1.0
 0	0	0	0
 0	0	0
 1	1	1
@@ -4627,3 +4627,5 @@ mesh
 0
 
 0
+0
+

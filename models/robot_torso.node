@@ -1,7 +1,7 @@
 file_version 1.0
 model_version 1.0
 box
-0.4	0.4	0.7
+0.4	0.4	0.7	1.0
 0	0	0	0
 0	3.5	0
 1	1	1
@@ -69,6 +69,7 @@ none
 0
 0
 
+0
 5
 robot_leg2
 robot_leg1

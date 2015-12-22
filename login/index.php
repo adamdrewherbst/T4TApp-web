@@ -7,7 +7,7 @@ if($db->connect_errno) {
 	exit();
 }
 
-$result = $db->query("SELECT * FROM users WHERE email='$email'");
+$result = $db->query("SELECT * FROM users WHERE username='$username'");
 if(!$result || $result->num_rows == 0) {
 	echo "NO_SUCH_USER";
 	exit();

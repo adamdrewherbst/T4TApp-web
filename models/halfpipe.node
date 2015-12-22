@@ -1,7 +1,7 @@
 file_version 1.0
 model_version 1.0
 halfpipe
-0.6	0.2	0.0
+0.6	0.2	0.0	1.0
 0	0	0	0
 0	0	0
 1	1	1
@@ -448,3 +448,5 @@ mesh
 0
 
 0
+0
+

@@ -1,7 +1,7 @@
 file_version 1.0
 model_version 1.0
 disk_with_holes
-0.5	0.5	0.5
+0.5	0.5	0.5	1.0
 0	0	0	0
 0	0	0
 1	1	1
@@ -7457,3 +7457,5 @@ mesh
 0
 
 0
+0
+
